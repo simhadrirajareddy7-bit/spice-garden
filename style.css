@@ -1,0 +1,272 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* General Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: white;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #1a1a1a;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff9800;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+    ), url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9800;
+    color: black;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* Common Section Styling */
+section {
+    padding: 70px 8%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #ff9800;
+}
+
+/* Menu Section */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.menu-card {
+    background-color: #222222;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #333;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff9800;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    margin: 20px 10px 10px;
+    font-size: 23px;
+}
+
+.menu-card p {
+    color: #cccccc;
+    padding: 0 15px;
+    line-height: 1.6;
+}
+
+.menu-card h4 {
+    color: #ff9800;
+    font-size: 22px;
+    margin: 20px;
+}
+
+/* Special Offers */
+.offers {
+    background-color: #1a1a1a;
+}
+
+.offer-box {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: black;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.offer-box h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.offer-box p {
+    font-size: 18px;
+}
+
+/* Reviews */
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.review-card {
+    background-color: #222222;
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff9800;
+}
+
+.review-card p {
+    color: #dddddd;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.review-card h4 {
+    color: #ff9800;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.contact p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #cccccc;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    color: #aaaaaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .menu-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .review-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .offer-box {
+        padding: 25px;
+    }
+}
